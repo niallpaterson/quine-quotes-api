@@ -3,7 +3,7 @@
   "name": "quine-quotes-api",
   "version": "1.0.0",
   "description": "A RESTful api built in node that manages quotes from the philosopher and logician Willard Van Orman Quine.",
-  "main": "server.js",
+  "main": "api/server.js",
   "scripts": {
     "test": "jest",
     "listen": "npx nodemon src/server.js"
