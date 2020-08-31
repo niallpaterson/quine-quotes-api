@@ -52,3 +52,15 @@ describe('It succesfully POSTs', () => {
   })
 });
 
+describe('It succesfully DELETEs', () => {
+  test('a quote', async () => {
+    const quotesBefore = await request(api).get('/quotes');
+    await request(api).delete('/quotes/5hblv7aqkeilp586');
+    const quotesAfter = await request(api).get('/quotes');
+    expect(quotesAfter.body.length).toBe(quotesBefore.body.length - 1);
+  }),
+  test('and returns the correct response', async () => {
+    const response = await request(api).delete('/quotes/5hblv7aqkeilp586');
+    expect(response.statusCode).toBe(202);
+  })
+})
