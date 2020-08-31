@@ -17,5 +17,8 @@ const save = (req, res) => {
 
 const controller = {
   findAll,
+  findRandom,
+  save,
+}
 
 export default controller;
