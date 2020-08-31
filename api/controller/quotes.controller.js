@@ -15,10 +15,16 @@ const save = (req, res) => {
   res.status(201).send('Quote successfully created');
 }
 
+const destroy = (req, res) => {
+  quotes.destroy(req.params.id);
+  res.status(202).send();
+}
+
 const controller = {
   findAll,
   findRandom,
   save,
+  destroy,
 }
 
 export default controller;
