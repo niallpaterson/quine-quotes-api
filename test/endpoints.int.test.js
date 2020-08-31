@@ -39,3 +39,16 @@ describe('It succesfully GETs', () => {
   })
 })
 
+describe('It succesfully POSTs', () => {
+  test('a quote', async () => {
+    const quotesBefore = await request(api).get('/quotes');
+    await request(api).post('/quotes').send({ quote: 'A mock to test POST requests' });
+    const quotesAfter = await request(api).get('/quotes');
+    expect(quotesAfter.body.length).toBe(quotesBefore.body.length + 1);
+  })
+  test('and returns the correct response', async () => {
+    const response = await request(api).post('/quotes');
+    expect(response.statusCode).toBe(201);
+  })
+});
+
