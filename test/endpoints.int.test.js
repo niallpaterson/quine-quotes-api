@@ -25,3 +25,17 @@ describe('It returns a 404 error with the correct message for empty', () => {
     expect(noRoute.text).toBe('This route has no content.');
   })
 })
+
+describe('It succesfully GETs', () => {
+  test('all quotes', async () => {
+    const allQuotes = await request(api).get('/quotes');
+    expect(allQuotes.statusCode).toBe(200);
+    expect(allQuotes.body.length).toBe(3);
+  }),
+  test('a random quote', async () => {
+    const randomQuote = await request(api).get('/quotes/random');
+    expect(randomQuote.statusCode).toBe(200);
+    expect([randomQuote.body].length).toBe(1);
+  })
+})
+
