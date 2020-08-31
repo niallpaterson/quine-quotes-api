@@ -1,0 +1,40 @@
+{
+  "type": "module",
+  "name": "quine-quotes-api",
+  "version": "1.0.0",
+  "description": "A RESTful api built in node that manages quotes from the philosopher and logician Willard Van Orman Quine.",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "listen": "npx nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niallpaterson/quine-quotes-api.git"
+  },
+  "keywords": [
+    "RESTful",
+    "api",
+    "Quine",
+    "quotes"
+  ],
+  "author": "NiallJP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niallpaterson/quine-quotes-api/issues"
+  },
+  "homepage": "https://github.com/niallpaterson/quine-quotes-api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^26.3.0",
+    "commitlint": "^9.1.2",
+    "jest": "^26.4.0",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2",
+    "uniqid": "^5.2.0"
+  }
+}
