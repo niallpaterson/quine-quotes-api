@@ -4,7 +4,7 @@ An API for managing quotations from the logician and philosopher [Willard Van Or
 
 ## About
 
-The API is built in Node.js using [express](https://www.npmjs.com/package/express). A local JSON file is used for its database. Interaction with the database is handled with Node's filesystem module. To prevent file corruption, synchronous (and hence blocking) variants of the readFile and writeFile operations are used. In the future, corruption will be avoided by using asynchoronous operations coupled with [rwlock](https://www.npmjs.com/package/rwlock).
+The API is built in Node.js using [express](https://www.npmjs.com/package/express). A local JSON file is used for its database. Interaction with the database is handled with Node's filesystem module. To prevent file corruption synchronous (and hence blocking) variants of the readFile and writeFile operations are used. In the future corruption will be avoided by using asynchronous operations coupled with [rwlock](https://www.npmjs.com/package/rwlock).
 
 ## Installation
 
@@ -28,7 +28,9 @@ Start the server by running the 'listen' script:
 npm run listen
 ````
 
-Alternatively, start the server with nodemon. If globally installed:
+Alternatively, start the server with nodemon. 
+
+If globally installed:
 
 ````shell
 nodemon
