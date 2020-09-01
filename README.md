@@ -65,7 +65,7 @@ GET /quotes/random    # returns a random quotation from the list
 ### POST
 
 ````shell
-POST /quotes/random   # posts a quotation to the list
+POST /quotes   # posts a quotation to the list
 ````
 
 To post a quote, a body containing a single JSON object is required. The object must have a single property with the key 'quote'. The value must be a string containing the quotation.
