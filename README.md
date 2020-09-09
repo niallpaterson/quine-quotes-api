@@ -1,6 +1,6 @@
 # 👴🏻 Quine quotes API
 
-An API for managing quotations from the logician and philosopher [Willard Van Orman Quine](https://en.wikipedia.org/wiki/Willard_Van_Orman_Quine). The API does not [print its own source code](https://en.wikipedia.org/wiki/Quine_(computing)).
+An HTTPS API for managing quotations from the logician and philosopher [Willard Van Orman Quine](https://en.wikipedia.org/wiki/Willard_Van_Orman_Quine). The API does not [print its own source code](https://en.wikipedia.org/wiki/Quine_(computing)).
 
 ## About
 
